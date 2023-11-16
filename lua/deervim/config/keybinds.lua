@@ -15,7 +15,7 @@ local bindings = {
         --o = { "<cmd>edit <tab><cr>", " Abrir"},
         s = { "<cmd>write<cr>", " Guardar"},
    },
-   p = { 
+   p = {
        name = " Paquetes",
        l = { "<cmd>Lazy<cr>", "Lazy" },
    },
