@@ -5,6 +5,8 @@ local c_branch = {
     'branch',
     icon = '',
     color = { bg = colors.green, fg = colors.bg_dark },
+    separator = { left = "", right = "" },
+    draw_empty = true,
 }
 
 local c_diff = {
@@ -149,9 +151,10 @@ local options = {
         component_separators = "",
         section_separators = { right = "", left = "" },
     },
+    globalstatus = true, --barra unica
     sections = {
         lualine_a = { 'mode' },
-        lualine_b = { c_branch , c_diff, c_diagnostics },
+        lualine_b = { c_diff, c_diagnostics },
         lualine_c = c_fileinfo,
         lualine_x = c_location,
         lualine_y = c_search,
@@ -163,7 +166,7 @@ local options = {
         lualine_c = {},
         lualine_x = {},
         lualine_y = {},
-        lualine_z = {},
+        lualine_z = { c_branch },
     },
     extensions = { 'lazy' },
 }
