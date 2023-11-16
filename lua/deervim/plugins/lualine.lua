@@ -17,6 +17,8 @@ local c_diff = {
         modified = '',
         removed = '',
     },
+    color = { bg = colors.green, fg = colors.bg_dark },
+    separator = { left = "", right = "" },
 }
 
 local c_diagnostics = {
@@ -37,7 +39,7 @@ local c_fileinfo = {
         'filetype',
         colored = true,
         icon_only = true,
-        padding = 1,
+        padding = { left = 1, right = 0 },
         color = { bg = colors.magenta , fg = colors.bg_dark},
         icon = { align = 'center' },
         separator = '',
@@ -49,15 +51,16 @@ local c_fileinfo = {
         path = 0,
         --color = { bg = colors.bg_dark, fg = colors.fg_dark },
         symbols = {
-            modified = '󱇨 ',
-            readonly = '󱀰 ',
-            unnamed = '󱀰 ',
-            newfile = '󱀰 ',
+            modified = '󱇨',
+            readonly = '󱀰',
+            unnamed = '󱀰',
+            newfile = '󱀰',
         },
-        separator = { left = '', right = "" },
+        padding = 1,
+        separator = { right = "" },
         color = { bg = colors.magenta, fg = colors.bg_dark },
     },
-    { 
+    {
         'filesize',
         separator = { left = '', right = '' },
         color = { bg = colors.purple, fg = colors.bg_dark },
@@ -72,6 +75,7 @@ local c_location = {
     },
     { 
         'location',
+        padding = 1,
         color = { bg = colors.red, fg = colors.bg_dark },
     },
 }
@@ -98,7 +102,7 @@ local c_buffers = {
     mode = 2,
     max_length = vim.o.columns * 2 / 3,
     use_mode_colors = false,
-    -- filetype_names ={TelescopePrompt = 'Telescope'},
+    filetype_names ={ TelescopePrompt = 'Telescope' },
     buffers_color = {
         active = {
             fg = colors.bg_dark,
@@ -111,9 +115,9 @@ local c_buffers = {
     },
     separator = {left ='', right = '' },
     symbols = {
-        modified = '󰣕 ',
-        alternate_file = '󰻃 ',
-        directory = ' ',
+        modified = '󰣕',
+        alternate_file = '󰻃',
+        directory = '',
     },
 }
 
@@ -133,7 +137,7 @@ local c_search = {
 local c_sys = {
     { 
         'datetime',
-        style = '  %H:%M',
+        style = ' %H:%M',
         color = { bg = colors.blue, fg = colors.bg_dark },
     },
     {
@@ -154,7 +158,7 @@ local options = {
     globalstatus = true, --barra unica
     sections = {
         lualine_a = { 'mode' },
-        lualine_b = { c_diff, c_diagnostics },
+        lualine_b = { c_diagnostics },
         lualine_c = c_fileinfo,
         lualine_x = c_location,
         lualine_y = c_search,
@@ -166,14 +170,14 @@ local options = {
         lualine_c = {},
         lualine_x = {},
         lualine_y = {},
-        lualine_z = { c_branch },
+        lualine_z = { c_branch, c_diff },
     },
     extensions = { 'lazy' },
 }
 
 return {
     'nvim-lualine/lualine.nvim',
-    requires = {
+    dependencies = {
         'nvim-tree/nvim-web-devicons', 
         opt = true,
     },

@@ -20,3 +20,6 @@ require("lazy").setup('deervim.plugins', opts)
 
 -- cargar nuestro tema
 vim.cmd[[colorscheme tokyonight]]
+
+-- sistema de notificaciones
+vim.notify = require("notify")

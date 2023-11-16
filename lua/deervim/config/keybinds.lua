@@ -21,6 +21,7 @@ local bindings = {
     f = {
          name= " Archivo",
          n = { "<cmd>enew<cr>", " Nuevo"},
+         e = { tsbuild.find_files, '󰮗 Buscar' },
          --o = { "<cmd>edit <tab><cr>", " Abrir"},
          s = { "<cmd>write<cr>", " Guardar"},
     },
@@ -39,7 +40,7 @@ local bindings = {
              b = { tsbuild.buffers, ' Buffers' },
              c = { tsbuild.colorscheme, '󰸌 Colores' },
              f = { tsbuild.find_files, '󰮗 Buscar' },
-             g = { tsbuild.live_grep, 'Grep' },
+             --g = { tsbuild.live_grep, 'Grep' },
              h = { tsbuild.help_tags, '󰘥 Ayuda' },
              -- n = { '<cmd>Telescope notify<cr>', 'Notificaciones' },
              o = { tsbuild.oldfiles, ' Historial' },
