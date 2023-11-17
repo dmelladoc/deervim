@@ -13,11 +13,25 @@ Porque siempre es bueno adoctrinar gente en el uso de vim/neovim.
 - Fuzzy Finder (Telescope)
 - Gestor de keybindings (which-key)
 - Barra de estado (lualine)
+- Notificaciones (Notify)
 
 ### Pendientes
 - LSP (Mason y etc...)
 - Copilot
 - Manejo de archivos (neotree?)
+- Git (gitsigns, github)
 - otros
+- Terminal
 
+### Soporte de lenguajes
+Idealmente buscamos con el LSP configurar el soporte por defecto para los lenguajes con los cuales trabajo principalmente:
+Esta lista menciona algunos lenguajes y soporte de ciertos elementos que se espera desarrollar.
 
+- Python:
+  - Interprete interno
+  - Debug?
+  - Notebook
+- LaTeX:
+  - Compilacion
+  - synctex
+- Lua
