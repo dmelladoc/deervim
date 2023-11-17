@@ -53,17 +53,19 @@ local c_fileinfo = {
         symbols = {
             modified = '󱇨',
             readonly = '󱀰',
-            unnamed = '󱀰',
-            newfile = '󱀰',
+            unnamed = '󱀶',
+            newfile = '',
         },
         padding = 1,
-        separator = { right = "" },
+        separator = { right = "" }, --
         color = { bg = colors.magenta, fg = colors.bg_dark },
     },
     {
         'filesize',
         separator = { left = '', right = '' },
+        padding = { left = 1, right = 1 },
         color = { bg = colors.purple, fg = colors.bg_dark },
+        always_visible = true,
     },
 }
 
@@ -71,11 +73,12 @@ local c_location = {
     { 
         'progress',
         separator = {left ='', right = '' },
+        padding = { left = 1, right = 1 },
         color = { bg = colors.red1, fg = colors.bg_dark },
     },
     { 
         'location',
-        padding = 1,
+        padding = { left = 0, right = 1 },
         color = { bg = colors.red, fg = colors.bg_dark },
     },
 }

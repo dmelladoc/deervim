@@ -9,7 +9,7 @@ local options = {
         ERROR = "",
         INFO = "",
         TRACE = "",
-        WARN "",
+        WARN = "",
     },
     render = "wrapped-compact",
     stages = "slide",

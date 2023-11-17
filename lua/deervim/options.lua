@@ -15,6 +15,7 @@ local opt = vim.opt
 -- opciones generales
 opt.autowrite = false -- autoguardado
 opt.clipboard = "unnamedplus" --clipboard del sistema
+-- opt.cmdheight = 0 -- cmd solo aparece al usarlo
 opt.completeopt = { "menu", "menuone", "noselect" }
 opt.confirm = true -- preguntar antes de salir de buffer
 opt.cursorline = true -- Highlighting de la linea 
@@ -26,7 +27,7 @@ opt.smartcase = true
 
 opt.formatoptions = "jcroqlnt" -- opciones de formato (wrap y etc..)
 
-opt.laststatus = 2
+opt.laststatus = 3
 opt.number = true -- linea de numero
 opt.relativenumber = true --relativo a la linea actual
 
