@@ -33,13 +33,16 @@ opt.relativenumber = true --relativo a la linea actual
 
 opt.expandtab = true -- espacios como tabs
 opt.smartindent = true -- identacion automatica
-opt.tabstop = 4 -- espacios pra tabl
+opt.tabstop = 4 -- espacios para tab
 opt.shiftwidth = 4 -- tamaño de identación
 opt.shiftround = true 
 opt.spelllang = { 'en', 'es_CL' } 
 
 opt.splitright = true -- split a la derecha por defecto
+opt.splitbelow = true -- split hacia abajo
 opt.termguicolors = true -- fullcolor
+opt.scrolloff = 10 -- offset de lineas en blanco inferior
+
 
 opt.timeoutlen = 300
 opt.undofile = true

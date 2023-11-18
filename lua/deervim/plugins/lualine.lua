@@ -184,5 +184,6 @@ return {
         'nvim-tree/nvim-web-devicons', 
         opt = true,
     },
+    lazy = false,
     opts = options,
 }

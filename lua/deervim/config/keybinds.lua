@@ -11,23 +11,24 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<cr>', { desc = " Ventana" })
 local bindings = {
     b = {
         name = " Buffers",
-        b = { tsbuild.buffers, 'Listado' },
-        d = { "<cmd>bdelete<cr>", "Cerrar" },
-        h = { "<cmd>bprevious<cr>", "Anterior" },
-        l = { "<cmd>bnext<cr>", "Siguiente" },
-        ["0"] = { "<cmd>bfirst<cr>", "Inicio" },
-        ["$"] = { "<cmd>blast<cr>", "Final" }, 
+        b = { tsbuild.buffers, ' Listado' },
+        d = { "<cmd>bdelete<cr>", " Cerrar" },
+        h = { "<cmd>bprevious<cr>", " Anterior" },
+        l = { "<cmd>bnext<cr>", " Siguiente" },
+        ["0"] = { "<cmd>bfirst<cr>", " Inicio" },
+        ["$"] = { "<cmd>blast<cr>", " Final" }, 
     },
     f = {
          name= " Archivo",
          n = { "<cmd>enew<cr>", " Nuevo"},
-         e = { tsbuild.find_files, '󰮗 Buscar' },
+         e = { "<cmd>NvimTreeToggle<cr>", " Explorar" },
+         --e = { tsbuild.find_files, '󰮗 Buscar' },
          --o = { "<cmd>edit <tab><cr>", " Abrir"},
          s = { "<cmd>write<cr>", " Guardar"},
     },
     p = {
         name = " Paquetes",
-        l = { "<cmd>Lazy<cr>", "Lazy" },
+        l = { "<cmd>Lazy<cr>", "󰒲 Lazy" },
     },
     s = {
         name = '󰰡 ',
