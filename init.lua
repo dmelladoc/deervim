@@ -1,6 +1,6 @@
 
 -- cargar opciones
-require('deervim.options')
+require('deervim.config.options')
 
 -- cargar manager (lazy)
 require('deervim.start')
