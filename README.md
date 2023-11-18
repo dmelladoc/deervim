@@ -1,10 +1,23 @@
 # DeerVim
 
 Mi configuración de Neovim. Esta vez con mayor organizacion.
-Una versión preliminar se encuentra en mis [dotfiles](https://www.github.com/dmelladoc/dotfiles).
+Una versión anterior se encuentra en mis [dotfiles](https://www.github.com/dmelladoc/dotfiles).
 
-El motivo de por que lo separé, es porque quiero armar una versión comoda y que me permita tambien compartirla con mis cercanos.
-Porque siempre es bueno adoctrinar gente en el uso de vim/neovim.
+**Work in progress**
+
+## Motivación
+- Armar una versión comoda y que me permita tambien compartirla con mis cercanos.
+- Permitir facilidad de personalización, orientada a usuarios en español.
+- Porque siempre es bueno adoctrinar gente en el uso de vim/neovim.
+
+## Requisitos
+- Neovim
+- Cualquier [NerdFont](https://www.nerdfonts.com) (Recomendación: `IosevkaTerm`)
+- Emulador de Terminal (Recomendacion: [Alacritty](https://github.com/alacritty/alacritty)
+
+## Instalación
+- Clonar el repositorio en `~/.config/nvim`
+- Abrir. `lazy.nvim` instalará los paquetes utilizados
 
 
 ## Progreso
