@@ -22,10 +22,15 @@ local bindings = {
          name= " Archivo",
          n = { "<cmd>enew<cr>", " Nuevo"},
          e = { "<cmd>NvimTreeToggle<cr>", " Explorar" },
-         --e = { tsbuild.find_files, '󰮗 Buscar' },
+        f = { tsbuild.find_files, '󰮗 Buscar' },
          --o = { "<cmd>edit <tab><cr>", " Abrir"},
          s = { "<cmd>write<cr>", " Guardar"},
     },
+    h = {
+        name = "󰘥 Ayuda",
+        k = {tsbuild.keymaps, " Teclas"},
+        h = {tsbuild.help_tags, "󰍉 Buscar"},
+    }, 
     p = {
         name = " Paquetes",
         l = { "<cmd>Lazy<cr>", "󰒲 Lazy" },
@@ -33,6 +38,7 @@ local bindings = {
     s = {
         name = '󰰡 ',
         c = { "<cmd>set spell!<cr>", "󰓆 Corrector" },
+        s = { tsbuild.spell_suggest, "Sugerencias"},
     },
     t = {
          name = '󰰤 ',
@@ -41,7 +47,7 @@ local bindings = {
              b = { tsbuild.buffers, ' Buffers' },
              c = { tsbuild.colorscheme, '󰸌 Colores' },
              f = { tsbuild.find_files, '󰮗 Buscar' },
-             --g = { tsbuild.live_grep, 'Grep' },
+             g = { tsbuild.live_grep, 'Grep' },
              h = { tsbuild.help_tags, '󰘥 Ayuda' },
              -- n = { '<cmd>Telescope notify<cr>', 'Notificaciones' },
              o = { tsbuild.oldfiles, ' Historial' },
