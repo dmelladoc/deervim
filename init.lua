@@ -1,9 +1,2 @@
-
--- cargar opciones
-require('deervim.config.options')
-
--- cargar manager (lazy)
-require('deervim.start')
-
--- keybindings
-require('deervim.config.keybinds')
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
