@@ -8,7 +8,7 @@ return {
         formatters_by_ft = {
             tex = { "latexindent" },
             python = { "ruff_fix", "ruff_format" },
-            --markdown = { { "prettierd", "prettier", "dprint" } },
+            markdown = { "markdownlint-cli2", "marksman" },
         },
     },
 }
