@@ -6,7 +6,7 @@ return {
         vim.g.vimtex_quickfix_method = vim.fn.executable("pplatex") == 1 and "pplatex" or "latexlog"
         vim.g.vimtex_compiler_latexmk = {
             aux_dir = "./.aux",
-            out_dir = "./output",
+            out_dir = "./",
         }
     end,
     keys = {

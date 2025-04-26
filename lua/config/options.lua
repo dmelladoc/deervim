@@ -26,6 +26,9 @@ opt.wrap = true -- wrap de lineas
 -- clipboard
 opt.clipboard = "unnamedplus"
 
+-- desactivacion de la barra de estado
+vim.g.ai_cmp = false
+
 -- Python LSP
 vim.g.lazyvim_python_lsp = "ruff"
 --vim.g.lazyvim_python_lsp = "basedpyright"

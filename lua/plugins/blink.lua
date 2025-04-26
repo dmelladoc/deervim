@@ -14,5 +14,12 @@ return {
                 },
             },
         },
+        -- server_opts_overrides = {
+        --     settings = {
+        --         telemetry = {
+        --             telemetryLevel = "off",
+        --         },
+        --     },
+        -- },
     },
 }
